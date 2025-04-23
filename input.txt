@@ -1,4 +1,4 @@
 a = true || single line comment
 b = 2 |* multi line comment
-some text *| c = 3 
+some text *| c = 3 * ( ) [ ]
 if true then if a then false else c
