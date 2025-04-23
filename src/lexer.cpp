@@ -168,8 +168,8 @@ std::unique_ptr<TokenBase> Lexer::lookahead()
         }
     }
 
-    std::cout << "return nullptr\n";
-    return nullptr;
+    std::cerr << "Lexer error: Unexpected character '" << source[0] << "' at line " << position.line << ", column " << position.column << std::endl;
+    exit(1);
 };
 
 
